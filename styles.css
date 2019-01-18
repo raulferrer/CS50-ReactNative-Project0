@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+html, body {
+  background-color: #eee;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  border-top: 1px solid #aaaaaa;
+}
+
+.center {
+  align-self: center;
+}
+
+.flow-right {
+  display: flex;
+  justify-content: space-around;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  height: 100vh;
+}
+
+.title, .controls, .button {
+  flex: none;
+}
+
+.button {
+  background-color: #008CBA;
+  border: 2px solid #FFFFFF;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.button:active {
+  background-color: #FFFFFF;
+  border: 2px solid #008CBA;
+  color: #008CBA;
+}
+
+.todo-list {
+  flex: 1 1 0;
+  margin-top: 20px;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.todo-delete {
+  margin: 10px;
+}
+
+.todo-checkbox {
+  margin: 10px;
+}
+
+.todo-container {
+  padding: 20px;
+  border-bottom: 1px solid #333333;
+}
+
+.todo-container:first-of-type {
+  border-top: 1px solid #333333;
+}
+
+.check {
+  width: 25px;
+  margin: 15px 5px;
+  position: relative;
+  font-size: 1.5em;
+}
+
+
+.delete {
+  background-color: rgb(186, 0, 0);
+  border: white;
+  color: white;
+  padding: 5px 10px;
+  margin: 8px 5px;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  float: right;
+}
+
+.delete:active {
+  background-color: white;
+  border: 2px solid  rgb(186, 0, 0);
+  color: rgb(186, 0, 0);
+}
+
+.checkboxDiv {
+  float: left;
+  width: 5%;
+}
+
+.pDiv {
+  float: left;
+  font-weight: 100;
+  width: 80%;
+}
+
+.deleteButtonDiv {
+  float: right;
+  width: 15%;
+}
+
+.todoLiContainer {
+  overflow: auto;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+}
